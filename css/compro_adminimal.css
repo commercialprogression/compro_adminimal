@@ -1,13 +1,17 @@
-.views-field-excluded {
-  color: #888;
+/* Tags */
+blockquote {
+  font-style: italic;
+}
+embed, img, object {
+  max-width: 100%;
 }
 
+/* IDs */
 #content-top .block {
   border: 1px solid #ccc;
   margin: 0 0 15px;
   padding: 5px 15px;
 }
-
 #dashboard {}
   #dashboard .dashboard-region .block {
     border: 1px solid #888;
@@ -18,7 +22,44 @@
     font-size: 2em;
     padding: 10px;
   }
-  
-body.adminimal-theme .views-ui-dialog #edit-options .collapsible {
-  float: none;
+
+/* Classes */
+.adminimal-theme .form-item,
+.adminimal-theme .text-format-wrapper {
+  margin-bottom: 5em;
+}
+  .adminimal-theme .text-format-wrapper .form-item {
+    margin-bottom: 0;
+  }
+  .adminimal-theme .filter-wrapper {
+    margin-bottom: 0;
+    max-height: 2.2em;
+    overflow: hidden;
+  }
+.field-type-paragraphs {}
+  .field-type-paragraphs .field-multiple-table {}
+    .field-type-paragraphs .field-multiple-table tr.draggable td:nth-child(2) {}
+      .field-type-paragraphs .field-multiple-table tr.draggable td:nth-child(2) > div:nth-child(1) {
+        display: none;
+      }
+      .field-type-paragraphs .field-multiple-table tr.draggable td:nth-child(2) > div:nth-child(2) {
+        background: #fafafa;
+        border: 1px dashed #ccc;
+        float: left;
+        max-width: 37em;
+        min-height: 3.5em;
+        min-width: 20em;
+        padding: 1em;
+      }
+      .field-type-paragraphs .field-multiple-table tr.draggable td:nth-child(2) > .form-actions {
+        float: right;
+        margin: 0 0 0 10px;
+        max-width: 18em;
+      }
+.node-form {
+  margin: 0 auto;
+  max-width: 900px;
+}
+.views-field-excluded {
+  color: #888;
 }
